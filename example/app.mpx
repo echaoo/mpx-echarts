@@ -1,0 +1,29 @@
+<script>
+  import mpx from '@mpxjs/core'
+  import apiProxy from '@mpxjs/api-proxy'
+
+  import mpxEcharts, { echarts } from '../src/install'
+
+  mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts, { echarts })
+  // app.js
+  App({})
+</script>
+
+<style>
+
+</style>
+
+<script type="application/json">
+  {
+    "pages": [
+      "./demo/index"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "echarts demo",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light"
+    }
+  }
+</script>

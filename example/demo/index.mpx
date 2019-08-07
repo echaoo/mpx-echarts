@@ -1,0 +1,21 @@
+<template>
+  <bar-chart></bar-chart>
+  <pie-chart></pie-chart>
+</template>
+
+<script>
+  import { createPage } from '@mpxjs/core'
+
+  createPage({
+    onLoad () {}
+  })
+</script>
+
+<script type="application/json">
+  {
+    "usingComponents": {
+      "bar-chart": "./barChart",
+      "pie-chart": "./pieChart"
+    }
+  }
+</script>
