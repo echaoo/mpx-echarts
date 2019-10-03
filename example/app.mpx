@@ -2,7 +2,13 @@
   import mpx from '@mpxjs/core'
   import apiProxy from '@mpxjs/api-proxy'
 
-  import mpxEcharts, { echarts } from '../src/install'
+  // use custom echarts
+  import mpxEcharts from '../src/install'
+  import * as echarts from './lib/echarts'
+
+  // or use default echats provide by mpx-echarts, no need give echarts params in option when plugin use
+  // import mpxEcharts from '../src/index'
+  // mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts)
 
   mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts, { echarts })
   // app.js
