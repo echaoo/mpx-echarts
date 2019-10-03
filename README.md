@@ -97,14 +97,13 @@ npm install mpx-echarts -S
 在app.mpx文件中引入install文件并在注册时以参数的形式传入echarts：
 ```vue
 <script>
-   import mpx from '@mpxjs/core'
-   import apiProxy from '@mpxjs/api-proxy'
-   import echarts from './lib/echarts'
-   import mpxEcharts from '../src/install'
-  mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts, { echarts })
-  
-  // app.js
-  App({})
+import mpx from '@mpxjs/core'
+import apiProxy from '@mpxjs/api-proxy'
+import echarts from './lib/echarts'
+import mpxEcharts from 'mpx-echarts/src/install'
+mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts, { echarts })
+// app.js
+App({})
 </script>
 ```
 定制的echarts文件，可以是打包好的echarts文件，也可以用以下方式引入(参考[本文demo](https://github.com/echaoo/mpx-echarts/blob/master/example/lib/echarts.js))：

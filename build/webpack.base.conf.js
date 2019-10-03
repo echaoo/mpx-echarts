@@ -89,7 +89,10 @@ const webpackConf = {
   mode: 'none',
   resolve: {
     extensions: ['.js', '.mpx'],
-    modules: ['node_modules']
+    modules: ['node_modules'],
+    alias: {
+      'mpx-echarts': resolve('/')
+    }
   }
 }
 
