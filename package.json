@@ -1,6 +1,6 @@
 {
   "name": "mpx-echarts",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "use echarts with mpx framework",
   "module": "src/index.js",
   "scripts": {
