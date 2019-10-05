@@ -1,5 +1,5 @@
-# MPX-Echart
-mpx-chart适用于MPX小程序框架中，旨在提供连接小程序与echarts的中间组件。
+# MPX-Echarts
+在MPX项目中更方便地使用echarts，提供跨平台抹平，目前同时支持微信和支付宝两个小程序平台。
 
 # Getting Started
 
@@ -10,9 +10,7 @@ npm install mpx-echarts -S
 
 ### Usage
 
-注意： 本组件默认提供了echarts文件，此文件为比较完整的图表集合，下面的示例也针对使用默认提供的图表。如果希望仅引入部分组件，请参考高阶使用部分。
-
-首先在app.mpx中作为mpx插件进行注册
+在app.mpx中作为mpx插件进行注册
 
 ```vue
 <script>
@@ -87,10 +85,32 @@ npm install mpx-echarts -S
     }
   }
 </script>
-
 ```
 
+以上用法是初始有数据的场景，如果期望先发ajax请求拿到数据再渲染，可以参考[示例项目中饼图的代码](https://github.com/echaoo/mpx-echarts/blob/master/example/demo/pieChart.mpx)
+
+> 注意： 本组件默认提供了echarts文件，此文件为比较完整的图表集合，下面的示例也针对使用默认提供的图表。如果希望仅引入部分组件，请参考高阶使用部分。
+
+### 示例项目
+
+本项目提供了一个示例可供运行参考。
+
+```bash
+# 安装依赖
+npm i
+
+# 开发前预备项
+npm run predev
+
+# 构建
+npm run watch:cross
+```
+
+使用小程序开发者工具打开dist/对应平台即可
+
 ### 高阶使用
+
+> 目前仅微信支持这样操作，因为echarts依赖的zrender里进行环境判断的代码里仅有微信小程序平台判断。
 
 如果希望仅引入部分组件，可以参考echarts官方文档[自定义echarts文件](https://echarts.baidu.com/tutorial.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E5%BB%BA%20ECharts)定制echarts文件。引入方式如下（也可以参考[本文demo](https://github.com/echaoo/mpx-echarts/tree/master/example)）：
 
