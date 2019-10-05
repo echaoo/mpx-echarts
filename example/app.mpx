@@ -3,14 +3,15 @@
   import apiProxy from '@mpxjs/api-proxy'
 
   // use custom echarts
-  import mpxEcharts from 'mpx-echarts/src/install'
-  import * as echarts from './lib/echarts'
+  // warning: only support in wx mode because zrender's env can only know wx env
+  // import mpxEcharts from 'mpx-echarts/src/install'
+  // import * as echarts from './lib/echarts-min'
+  // mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts, { echarts })
 
   // or use default echats provide by mpx-echarts, no need give echarts params in option when plugin use
-  // import mpxEcharts from 'mpx-echarts'
-  // mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts)
+  import mpxEcharts from 'mpx-echarts'
+  mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts)
 
-  mpx.use(apiProxy, { usePromise: true }).use(mpxEcharts, { echarts })
   // app.js
   App({})
 </script>
