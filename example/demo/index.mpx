@@ -1,5 +1,7 @@
 <template>
+  <view>柱状图</view>
   <bar-chart></bar-chart>
+  <view>饼图</view>
   <pie-chart></pie-chart>
 </template>
 
