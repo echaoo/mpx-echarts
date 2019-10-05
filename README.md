@@ -143,6 +143,9 @@ import 'echarts/lib/component/legend';
 ```
 其在组件中的使用和上面的示例相同。
 
+### 致谢
+
+本项目是基于echarts官方提供的[echarts-for-weixin](https://github.com/ecomfe/echarts-for-weixin)做的改造以更方面mpx项目使用，跨支付宝小程序平台部分使用了[高德echarts-aliapp](https://github.com/ant-move/echarts-Aliapp)提供的对应的echarts文件（对env部分的改造）。感谢以上项目的付出。
 
 ### FAQ
 1、使用时报以下错误信息是为什么？
