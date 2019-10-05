@@ -1,6 +1,6 @@
 <template>
   <view class="pie-container">
-    <ec-canvas id="mychart-dom-bar" canvasId="mychart-bar" ec="{{ec}}" bindinit="handleInit"></ec-canvas>
+    <ec-canvas id="mychart-dom-pie" canvasId="mychart-pie" ec="{{ec}}" bindinit="handleInit"></ec-canvas>
   </view>
 </template>
 
