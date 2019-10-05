@@ -30,7 +30,7 @@ const webpackConf = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/@mpxjs')],
-        exclude: [resolve('node_modules/@mpxjs/webpack-plugin')]
+        exclude: [resolve('src/echarts.js'), resolve('src/echarts-ali.js')]
       },
       {
         test: /\.json$/,
